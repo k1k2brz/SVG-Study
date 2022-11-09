@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Transform</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      .box-container {
+        display: flex;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        border: 2px solid black;
+        background: rgba(255, 255, 0, 7);
+        transition: 0.1s cubic-bezier(0.75, 0.04, 0.2, 1.04);
+      }
+      /*
+        transition-duration: 0.1s; 재생시간
+        transition-timing-function: ease;
+        transition-delay: 0s;
+        transition-property: all; 모든곳에 적용
+      */
+      .box:hover {
+        /* 
+        width: 200px;
+        height: 200px;
+        transform: scale(2) rotate(45deg);
+        한칸 띄우면 같이 쓰기 가능
+        transform: skewY(30deg); 
+        transform: translateY(10px);
+        transform: translate(30px, 10px);
+        */
+        transform: scale(2);
+        /* transform-origin: left top; */
+        /* transform-origin: 0% 0%; */
+        /* 기준점 변경 */
+        opacity: 0.9;
+        /* width height와는 다르게 다른 자리에 영향을 안미치고 혼자 커짐 */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Transform</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde cum eius ducimus corporis quasi beatae soluta eum
+      labore voluptates! Perferendis, laborum quaerat illo nisi illum nihil quasi totam iusto similique? Lorem ipsum
+      dolor sit amet consectetur adipisicing elit. Unde cum eius ducimus corporis quasi beatae soluta eum labore
+      voluptates! Perferendis, laborum quaerat illo nisi illum nihil quasi totam iusto similique? Lorem ipsum dolor sit
+      amet consectetur adipisicing elit. Unde cum eius ducimus corporis quasi beatae soluta eum labore voluptates!
+      Perferendis, laborum quaerat illo nisi illum nihil quasi totam iusto similique?
+    </p>
+    <div class="box-container">
+      <div class="box">a</div>
+      <div class="box">b</div>
+      <div class="box">c</div>
+      <div class="box">d</div>
+      <div class="box">e</div>
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde cum eius ducimus corporis quasi beatae soluta eum
+      labore voluptates! Perferendis, laborum quaerat illo nisi illum nihil quasi totam iusto similique? Lorem ipsum
+      dolor sit amet consectetur adipisicing elit. Unde cum eius ducimus corporis quasi beatae soluta eum labore
+      voluptates! Perferendis, laborum quaerat illo nisi illum nihil quasi totam iusto similique? Lorem ipsum dolor sit
+      amet consectetur adipisicing elit. Unde cum eius ducimus corporis quasi beatae soluta eum labore voluptates!
+      Perferendis, laborum quaerat illo nisi illum nihil quasi totam iusto similique?
+    </p>
+  </body>
+</html>
